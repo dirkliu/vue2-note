@@ -1,2 +1,2 @@
-# vue2-note-
-vue2
+# vue2-note
+vue2代码解读，记录
