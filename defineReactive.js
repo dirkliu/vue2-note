@@ -1,12 +1,17 @@
 /**
  * 定义一个响应式属性
+ * obj: Object
+ * key:string
+ * val: any
+ * customSetter: Function
+ * shallow: boolean
  */
 export function defineReactive (
-  obj: Object,
-  key: string,
-  val: any,
-  customSetter?: ?Function,
-  shallow?: boolean
+  obj,
+  key,
+  val,
+  customSetter,
+  shallow
 ) {
   const dep = new Dep()
 

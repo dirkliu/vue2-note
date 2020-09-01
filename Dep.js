@@ -6,7 +6,11 @@
  */
 class Dep {
   static target
+  id
+  subs
   constructor () {
+    this.id = uid++
+    this.subs = []
   }
 
   addSub (sub) {
@@ -17,6 +21,9 @@ class Dep {
   }
 
   depend () {
+    if (Dep.target) {
+      Dep.target.addDep(this)
+    }
   }
 
   notify () {
