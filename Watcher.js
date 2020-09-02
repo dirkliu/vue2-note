@@ -1,4 +1,9 @@
 /**
+ * A watcher parses an expression, collects dependencies,
+ * and fires callback when the expression value changes.
+ * This is used for both the $watch() api and directives.
+ */
+/**
  * vm
  * cb: Function
  * id: Number
