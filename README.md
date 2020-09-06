@@ -1,2 +1,2 @@
-# vue2-note-
+# vue2-note
 vue2
