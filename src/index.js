@@ -1,12 +1,4 @@
-class Dep {
-  constructor () {
-  }
-}
-
-class Watcher {
-  constructor () {
-  }
-}
+import {Dep} from './dep'
 
 function defineReactive (obj, key) {
   const dep = new Dep()
@@ -18,4 +10,8 @@ function defineReactive (obj, key) {
       obj[key] = value
     }
   })
+}
+
+export {
+  defineReactive
 }
