@@ -8,6 +8,7 @@ function defineReactive (obj, key) {
     }, 
     set () {
       obj[key] = value
+      dep.notify()
     }
   })
 }

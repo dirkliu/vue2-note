@@ -1,6 +1,14 @@
+let id = 0
+
 class Watcher {
-  static count = 0
   constructor () {
-    this.id = ++this.constructor.count
+    this.id = ++id
   }
+
+  update () {
+  }
+}
+
+export {
+  Watcher
 }

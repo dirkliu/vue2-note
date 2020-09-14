@@ -1,9 +1,16 @@
+let id = 0
+
 class Dep {
-  // static count
+  subs
   constructor () {
-     this.id = ++this.constructor.count
+     this.id = ++id
+  }
+
+  notify () {
   }
 }
+
+Dep.target = null
 
 export {
   Dep
