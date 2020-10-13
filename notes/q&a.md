@@ -4,7 +4,7 @@
 当只使用运行时版本时，使用 [vue-loader](https://github.com/vuejs/vue-loader) 或 vueify ，*.vue 文件内部的模板会在构建时预编译成 JavaScript。  
 * nextTick是怎么实现的？   
 将一个函数放到下一个循环去执行，如果可以支持微任务，就在下一个微任务去执行，如果不行，就放入宏任务。  
-优先级：Promise.then --> MutationObserver --> setInmediate --> setInterval
+优先级：Promise.then --> MutationObserver --> setImmediate --> setInterval
 * 虚拟dom是怎么转换成实际dom的？ 
 * vue怎么定义一个响应式属性？
 defineReactive函数定义一个对象的响应式属性。
