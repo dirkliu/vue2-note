@@ -5,6 +5,15 @@
   </head>
   <body>
     <div id="app"></div>
-    <script src="que2.js"></script>
+    <script src="../dist/index.js"></script>
+    <script>
+      var app = new App({
+        vnode: {
+          type: 'text',
+          children: 'test ok child'
+        }
+      })
+      app.mount("#app")
+    </script>
   </body>
 </html>
